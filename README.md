@@ -1,62 +1,43 @@
 # AI Endurance Coach website
 
-Simple static website prepared for GitHub Pages.
+Static website hosted with GitHub Pages.
+
+## Production details
+
+- Website: `https://aiendurancecoach.app`
+- Privacy policy: `https://aiendurancecoach.app/privacy.html`
+- Contact email: `contact@aiendurancecoach.app`
+
+The website, privacy policy and contact email use the same parent domain for the Garmin Connect Developer Program.
 
 ## Files
 
 - `index.html` — landing page
 - `privacy.html` — privacy policy
-- `styles.css` — design and responsive layout
+- `styles.css` — responsive design
 
-## Before publishing
+## Publish updates
 
-Replace every occurrence of:
+After editing the files:
 
-```text
-YOURDOMAIN.com
+```bash
+git add .
+git commit -m "Update website"
+git push
 ```
 
-with the domain you own, for example:
+GitHub Pages will redeploy automatically from the `main` branch.
 
-```text
-aiendurancecoach.com
-```
+## GitHub Pages configuration
 
-The email, website and privacy policy should use the same parent domain for the Garmin Connect Developer Program.
+Repository settings:
 
-## Publish with GitHub Pages
-
-1. Create a new public GitHub repository, for example `ai-endurance-coach-site`.
-2. Upload these three files to the root of the repository.
-3. Open the repository settings.
-4. Go to **Pages**.
-5. Under **Build and deployment**, select:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-6. Save.
-7. GitHub will display the public website address after deployment.
-
-## Connect a custom domain
-
-After buying your domain:
-
-1. In GitHub repository **Settings → Pages**, enter the custom domain.
-2. In your domain provider's DNS settings, create the records requested by GitHub.
-3. Enable **Enforce HTTPS** when available.
-4. Use the same domain for:
-   - the website;
-   - the privacy policy;
-   - your personalized email address.
-
-Example:
-
-```text
-Website: https://aiendurancecoach.com
-Privacy: https://aiendurancecoach.com/privacy.html
-Email: matteo@aiendurancecoach.com
-```
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
+- Custom domain: `aiendurancecoach.app`
+- Enforce HTTPS: enabled
 
 ## Important
 
-The privacy page is a practical starter template, not formal legal advice. Update it to reflect the services and processors actually used before launching publicly.
+The privacy page is a practical starter policy and should be kept aligned with the services and data processors actually used by the platform.

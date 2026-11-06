@@ -10,7 +10,7 @@
     content="Privacy Policy for AI Endurance Coach."
   >
 
-  <link rel="stylesheet" href="styles.css?v=20261006-small-arrows-2">
+  <link rel="stylesheet" href="styles.css?v=20261106">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
     <article class="container legal-content">
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: 8 October 2026</p>
+      <p class="last-updated">Last updated: 6 November 2026</p>
 
       <h2>1. About AI Endurance Coach</h2>
       <p>
@@ -54,7 +54,7 @@
         <li>race dates, goals and training preferences;</li>
         <li>athlete feedback and coaching conversations;</li>
         <li>training plans and workout history;</li>
-        <li>authentication tokens required for connected services.</li>
+        <li>authentication tokens required for connected services;</li><li>device information, activity location and sensor samples where available, and weather estimates associated with an activity.</li>
       </ul>
 
       <h2>3. Purpose of processing</h2>
@@ -71,12 +71,14 @@
       <h2>4. Connected services</h2>
       <p>
         Users may choose to connect third-party services such as Strava,
-        Intervals.icu or Telegram. Compatible watch platforms may be connected through Intervals.icu. Data received from these services are used only for
+        Intervals.icu, Garmin Connect (where enabled) or Telegram. Compatible watch platforms may be connected through Intervals.icu. Data received from these services are used only for
         the coaching features explicitly requested by the user and are handled
         according to the applicable platform terms.
       </p>
 
       <p>When an athlete connects Intervals.icu, the coach may create and update planned structured workouts in that athlete’s calendar, and synchronize supported athlete settings such as thresholds and training zones, within the permissions explicitly granted by the athlete.</p>
+      <p>One activity source can be selected for imports. Workout destinations are selected separately. Disconnecting a service stops future access through that connection but does not automatically delete the history already stored in the coach.</p>
+      <h2>Artificial intelligence and Garmin data</h2><p>Selected profile information, activity metrics, plans, feedback and coaching conversations are processed through the OpenAI API to generate personalized training plans and responses. AI output can be inaccurate and is not medical advice. Garmin-derived data require an explicit AI consent in the Garmin card under Connections. That consent is not preselected and can be withdrawn there for future processing. Without it, new AI processing for a profile containing Garmin data is suspended; local consultation and sending previously saved workouts remain available. Garmin data and derived content are not intended for training, evaluating or improving AI models.</p>
       <h2>5. Legal basis</h2>
       <p>
         Where applicable, data are processed on the basis of the user's
@@ -89,7 +91,7 @@
       <p>
         Personal data are not sold. Data may be processed by technical service
         providers only when necessary to operate the platform, such as hosting,
-        messaging, artificial intelligence or connected fitness services.
+        messaging, artificial intelligence or connected fitness services. The coach stores data on a server managed by the controller. Cloudflare provides HTTPS and tunnel services; OpenAI processes the information needed for AI coaching; Stripe processes payments; connected fitness platforms and Telegram receive information needed for the connections and features you choose.</p><p>When device temperature is unavailable, Open-Meteo may receive approximate activity coordinates, date and time to estimate temperature and humidity. We do not send Open-Meteo names, user IDs, heart-rate data or full GPS tracks. Third-party providers may process data outside Switzerland under their applicable service and privacy terms.
       </p>
 
       <h2>7. Data retention</h2>
@@ -108,7 +110,7 @@
 
       <h2>9. User rights</h2>
       <p>
-        Users may request access, correction, export or deletion of their
+        Users can export a copy of their profile from the web app. They may also request access, correction, export or deletion of their
         personal data and may withdraw consent for connected services.
       </p>
 

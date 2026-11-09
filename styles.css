@@ -7,3 +7,8 @@
 
 /* Invitation and trial information, in the existing visual style. */
 .trial-section{display:flex;align-items:center;justify-content:space-between;gap:36px;padding-top:32px;padding-bottom:32px;margin-bottom:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.trial-section h2{margin-bottom:12px}.trial-section .eyebrow{margin-bottom:12px}.trial-section p:not(.eyebrow){max-width:610px;color:var(--muted);font-size:15px;margin-bottom:0}.trial-section .button{flex-shrink:0}.garmin-note{font-size:13px;color:var(--muted);line-height:1.7;margin-top:22px;max-width:760px}.garmin-note strong{color:var(--ink)}@media(max-width:600px){.trial-section{flex-direction:column;align-items:flex-start;gap:22px;margin-bottom:55px;padding-top:28px;padding-bottom:28px}.trial-section .button{white-space:normal}.hero-actions .text-link{white-space:normal}}
+
+.trial-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:18px 0}
+.trial-prices li{display:grid;gap:4px;padding:12px;border:1px solid var(--line);border-radius:12px}
+.trial-prices strong{font-size:18px}.trial-prices small{color:var(--muted)}
+@media(max-width:480px){.trial-prices{grid-template-columns:1fr}.trial-prices li{grid-template-columns:1fr auto}.trial-prices small{grid-column:1/-1}}
